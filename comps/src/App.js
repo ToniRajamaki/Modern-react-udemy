@@ -1,8 +1,25 @@
 import React from 'react'
+import Button from './Button'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <div>
+        <Button>Click me</Button>
+      </div>
+      <div>
+        <Button>Buy me</Button>
+      </div>
+      <div>
+        <Button>See Deal</Button>
+      </div>
+      <div>
+        <Button>Hide ads</Button>
+      </div>
+      <div>
+        <Button>Something</Button>
+      </div>
+    </div>
   )
 }
 
