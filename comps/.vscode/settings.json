@@ -16,7 +16,8 @@
     "public/logo512.png": true,
     "public/robots.txt": true,
     ".vscode": true,
-    "node_modules": true
+    "node_modules": true,
+    "tailwind.config.js": true
   },
   "hide-files.files": [
     ".gitignore",
@@ -29,6 +30,7 @@
     "public/logo512.png",
     "public/robots.txt",
     ".vscode",
-    "node_modules"
+    "node_modules",
+    "tailwind.config.js"
   ]
 }
