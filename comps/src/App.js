@@ -1,38 +1,23 @@
-import React from 'react'
-import Button from './Button'
-import { GoBell, GoAlert, GoDatabase } from 'react-icons/go'
+import Accordion from './components/Accordion'
 
 function App() {
+  const items = [
+    { id: 'asd1', label: 'header', content: 'This is the content' },
+    {
+      id: 'asd3',
+      label: 'header2',
+      content: 'This is the content This is the content',
+    },
+    {
+      id: 'asd2',
+      label: 'header3',
+      content: 'This is the content This is the content This is the content',
+    },
+  ]
+
   return (
     <div>
-      <div>
-        <Button primary>
-          <GoAlert></GoAlert>
-          Click me
-        </Button>
-      </div>
-      <div>
-        <Button outline secondary rounded>
-          <GoBell></GoBell>
-          Buy me
-        </Button>
-      </div>
-      <div>
-        <Button danger outline>
-          <GoDatabase />
-          See Deal
-        </Button>
-      </div>
-      <div>
-        <Button warning >
-          Hide ads
-        </Button>
-      </div>
-      <div>
-        <Button success rounded outline>
-          Something
-        </Button>
-      </div>
+      <Accordion items={items} />
     </div>
   )
 }
