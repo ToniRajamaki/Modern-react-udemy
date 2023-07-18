@@ -2,16 +2,20 @@ import Accordion from './components/Accordion'
 
 function App() {
   const items = [
-    { id: 'asd1', label: 'header', content: 'This is the content' },
+    {
+      id: 'asd1',
+      label: 'What is the meaning of life?',
+      content: 'According to some people its #42',
+    },
     {
       id: 'asd3',
-      label: 'header2',
-      content: 'This is the content This is the content',
+      label: 'What is the fundamental rule of learning?',
+      content: 'You have to apply your knowledge.',
     },
     {
       id: 'asd2',
-      label: 'header3',
-      content: 'This is the content This is the content This is the content',
+      label: 'How many questions there are in total?',
+      content: 'There is three questions. Or is there?',
     },
   ]
 
