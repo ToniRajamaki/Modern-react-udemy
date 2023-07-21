@@ -1,9 +1,7 @@
-import React, { cloneElement } from 'react'
 import { useState } from 'react'
 
-function Dropdown({ options }) {
+function Dropdown({ options, onChange, value }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [currentSelection, setCurrentSelection] = useState('Select...')
 
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -12,8 +10,7 @@ function Dropdown({ options }) {
   const handleOptionClick = (option) => {
     setIsOpen(false)
     console.log('option', option)
-    setCurrentSelection(option.value)
-    console.log('currentSelection', currentSelection)
+    onChange(option)
   }
 
   const renderedOptions = options.map((option) => {
@@ -26,7 +23,7 @@ function Dropdown({ options }) {
 
   return (
     <div>
-      <div onClick={handleClick}>{currentSelection}</div>
+      <div onClick={handleClick}>{value?.label || "Select..."}</div>
       {isOpen && <div>{renderedOptions}</div>}
     </div>
   )
