@@ -9,7 +9,11 @@ function TablePage() {
   ]
 
   const config = [
-    { label: 'Name', render: (fruit) => fruit.name },
+    {
+      label: 'Name',
+      render: (fruit) => fruit.name,
+      header: () => <th className='bg-red-500'>Name</th>,
+    },
     {
       label: 'Color',
       render: (fruit) => <div className={`p-3 m-2 ${fruit.color}`}></div>,
