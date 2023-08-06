@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar'
 import ButtonPage from './pages/ButtonPage'
 import ModalPage from './pages/ModalPage'
 import TablePage from './pages/TablePage'
+import WorkExperiencePage from './pages/WorkExperiencePage'
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path='/table' exact>
           <TablePage />
+        </Route>
+        <Route path='/experience' exact>
+          <WorkExperiencePage />
         </Route>
       </div>
     </div>
